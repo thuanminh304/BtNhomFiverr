@@ -35,8 +35,11 @@
   <body>
     <header>
       <div class="header__content">
-        <div class="header__icon">
-          <a href="#">
+        <div class="header__icon navbar navbar-expand-md navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
             <img
               src="https://qumracapital.com/wp-content/uploads/2017/12/fiverr-logo.png"
               alt="Fiverr"
@@ -44,6 +47,52 @@
 
             <i class="fa fa-circle"></i>
           </a>
+            
+          
+
+          <div class="collapse navbar-collapse" id="navbarHeader">
+            <ul class="navbar-nav ml-auto">
+              <button class="nav-item">Join Fiverr</button>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Browse Categories</a>
+              </li>     
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Explore</a>
+                </li>   
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fiverr Pro</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fiverr Business</a>
+                </li>           
+            </ul>  
+            <ul class="navbar-nav ml-auto">
+              <span class="nav-item">General</span>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">English</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">USD - $</a>
+              </li>
+            </ul>            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <nav class="header__nav">
           
@@ -64,8 +113,8 @@
               <a href="#">Italiano</a>
               <a href="#">Nederlands</a>
             </div>  
-          </div>                 
-          <div class="dropdown">  
+            </div>                 
+            <div class="dropdown">  
             <button  class="button-fixed" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <a href="#">
             <span>$ USD</span>
@@ -84,7 +133,7 @@
             <a href="#">New Zealand Dollar (NZD) - NZ$</a>
 
           </div>
-        </div>                       
+            </div>                       
             <a href="#">Become a Seller</a>
             <a href="#">Sign In</a>
             <a href="#"> <button>Join</button> </a>  
@@ -100,8 +149,8 @@
                   src="https://qumracapital.com/wp-content/uploads/2017/12/fiverr-logo.png"
                   alt="Fiverr"
                 />
-
                 <i class="fa fa-circle"></i>
+                
               </a>
             </div>
             <div class="header__nav-fixed">
@@ -180,7 +229,7 @@
       <div class="carousel__content">
         <div class="carousel__item">
           <div class="carousel__text">
-            <p>Find the perfect <i>freelance</i> <br> services for your business</p>
+            <p>Find the perfect <i>freelance</i> services for your business</p>
             <div class="input__carousel">
             <input
               class="form__carousel"
@@ -200,7 +249,7 @@
               </ul>
             </div>
           </div>
-          <div class="carousel__image img-fuild">
+          <div class="carousel__image">
             <img src="./images/bg-hero-1-1792-x1.jpg" alt="" />
           </div>
         </div>
@@ -226,7 +275,7 @@
                 </ul>
               </div>
           </div>
-          <div class="carousel__image img fuild">
+          <div class="carousel__image ">
             <img src="./images/bg-hero-2-1792-x1.jpg" alt="" />
           </div>
         </div>
@@ -252,7 +301,7 @@
                 </ul>
               </div>
           </div>
-          <div class="carousel__image img-fuild">
+          <div class="carousel__image ">
             <img src="./images/bg-hero-3-1792-x1.jpg" alt="" />
           </div>
         </div>
@@ -278,7 +327,7 @@
                 </ul>
               </div>
           </div>
-          <div class="carousel__image img-fuild">
+          <div class="carousel__image">
             <img src="./images/bg-hero-4-1792-x1.jpg" alt="" />
           </div>
         </div>
@@ -304,7 +353,7 @@
                 </ul>
               </div>
           </div>
-          <div class="carousel__image img-fuild">
+          <div class="carousel__image ">
             <img src="./images/bg-hero-5-1792-x1.jpg" alt="" />
           </div>
         </div>
@@ -624,7 +673,7 @@
           speed: 500,
           fade: true,
           cssEase: "linear",
-          autoplay: true,
+          autoplay: false,
           autospeed: 20000,
           arrows: false,
         });
@@ -643,7 +692,7 @@
         nextArrow: '<i class="fa fa-chevron-right right"></i>',
         responsive: [
           {
-            breakpoint: 1240,
+            breakpoint: 1200,
             settings: {
               slidesToShow: 4,
               slidesToScroll: 4,
@@ -651,7 +700,7 @@
             },
           },
           {
-            breakpoint: 1059,
+            breakpoint: 992,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -659,7 +708,7 @@
             },
           },
           {
-            breakpoint: 796,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -667,7 +716,7 @@
             },
           },
           {
-            breakpoint: 596,
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
